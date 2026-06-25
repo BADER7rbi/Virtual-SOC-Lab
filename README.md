@@ -2,39 +2,25 @@
 Mini SOC Environment using Active Directory and Wazuh
 مختبر أمن سيبراني افتراضي باستخدام Active Directory و Wazuh
 اولا السلام عليكم و رحمة الله و بركاته انا طالب في تخصص الامن السيبراني و توي متخرج لذالك قررت اطبق عشان افهم ف سويت المختبر العملي هذا:
-                 ┌─────────────────┐
-                 │ Windows Server  │
-                 │ Server 2022     │
-                 │ AD + DNS        │
-                 │ 192.168.100.10  │
-                 └────────┬────────┘
+                 
+                 Windows Server
+                 Server 2022
+                 AD + DNS  
+                 192.168.100.10
+            Internal Network (intnet)     
+                          │           
+                  Windows 10           
+                  Client-1
+                  192.168.100.20
                           │
-          ─────────────────────────────────
-            Internal Network (intnet)
-          ─────────────────────────────────
-                          │                         
+                  Kali Linux 
+                Attacker Machine
+                192.168.100.50
                           │
-                          │             
-                          │
-                   ┌──────────────┐              
-                   │ Windows 10   │             
-                   │ Client-1     │  
-                   |192.168.100.20|
-                   └──────────────┘              
-                          │
-                          │
-                ┌────────────────────┐
-                │ Kali Linux         │
-                │ Attacker Machine   │
-                │ 192.168.100.50     │
-                └────────────────────┘
-                          │
-                          │
-                ┌────────────────────┐
-                │ Defender Machine   │
-                │ Ubuntu  │Wazuh
-                │ 192.168.100.60     │
-                └────────────────────┘
+                Defender Machine 
+                Ubuntu  │Wazuh
+                192.168.100.60
+                
 
 داخل VirtualBox:
 
